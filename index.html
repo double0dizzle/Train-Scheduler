@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trains</title>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" integrity="sha256-NLLibs1jQZNnV59vwp+9dMxTdhKAeqKbl3XzgYzQyso=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda%7cGaldeano" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+</head>
+<body>
+    <header>
+        Tickets, Schedules, and Routes
+    </header>
+    <div id="wrapper">
+        <div id="add">Add a Train</div>
+        <form>
+            <label for="trainName"></label>
+            <input type="text" id="trainName" name="search" value="" placeholder="Train name">
+           
+            <input type="text" id="destination" name="search" value="" placeholder="Destination">
+          
+            <input type="text" id="firstTrainTime" name="search" value="" placeholder="First Train Time">
+            
+            <input type="text" id="frequency" name="search" value="" placeholder="Frequency (mins)">
+            <input id="fullForm" type="submit" value="Update">
+        </form>
+        <br>
+        <br>
+        <br>
+        <div id="terminal" ><b>Schedule</b></div>
+        <br>
+        <div id="defaultRow">
+            <table id="sched">
+                <tr id="tr">
+                    <th id="one">Train Name</th>
+                    <th id="two">Destination</th>
+                    <th id="three">First Train Time</th>
+                    <th id="four">Frequency (mins)</th>
+                    <th id="five">Minutes Away</th>
+                    
+                </tr>
+                <tr id="tr">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>Red, White, and Blue Train Lines. See above for departure times!</footer>
+    <script src="app.js"></script>
+</body>
+</html>
